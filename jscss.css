@@ -57,6 +57,7 @@ nav{
 html, body {
     margin: 0;
     height: 100%;
+    background-color:#e3effa;
 }
 
 /* * {
@@ -78,6 +79,7 @@ html, body {
 }
 
 .menu {
+    background-color:#e3effa;
     display: flex;
     flex-direction: row;
     list-style-type: none;
