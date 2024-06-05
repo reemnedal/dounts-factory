@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js </title>
+    <link rel="stylesheet" href="jscss.css">
+</head>
+<body>
+
+
+
+<div>
+
+ <script>
+
+
+
+ </script>
+ <script>
+    function additemone(){
+let userName=  prompt("please Enter Your Name ", "default" );
+
+let userGender=  prompt("please Enter Your gender Female/Male ", "Female" );
+
+
+ while (userName==null || userName=="default" ){
+  userName=  prompt("please Enter YOur Name ", "default" );
+ }
+
+ while(userGender==null || (userGender!="Female" && userGender!="Male")){
+  userGender=  prompt("please Enter Your gender Female/Male ", "Female" );
+
+ }
+ console.log("userName is:"+userName);
+
+
+
+
+ if (userGender=="Female"){
+
+    alert("Welcome Ms."+ userName)
+ } else if (userGender=="Male"){
+
+    alert("Welcome Mr."+userName);
+ }else{
+    alert("Welcome"+userName);
+ }
+
+
+let userOrder=prompt("What You Want to order choose one: Donuts,Coffee,Ice Cream or Bakery ","Donuts");
+console.log("userOrder is:"+userOrder);
+
+while(userOrder==null){
+   userOrder=prompt("What You Want to order choose one: Donuts,Coffee,Ice Cream or Bakery ");
+ }
+
+
+ alert("Your Order is getting prepared"+" "+userName);
+ let  firstArray=[userName,userGender,userOrder];
+
+
+ for(i=0;i<firstArray.length;i++){
+    console.log(firstArray[i]);
+ }
+    }
+</script>
+
+
+
+ <!-- <button onclick= "additemone()" >add item </button> -->
+
+</div>
+
+
+
+<section class="top-nav">
+   <div>
+     <img src="logo.png" alt="" width="150%" height="150%">
+   </div>
+   <input id="menu-toggle" type="checkbox"/>
+   <label class='menu-button-container' for="menu-toggle">
+       <div class='menu-button'></div>
+   </label>
+   <ul class="menu">
+       <li><a href="#home">HOME</a></li>
+       <li><a href="#about">ABOUT</a></li>
+       <li><a href="#skills">ORDER NOW</a></li>
+       <li><a href="#QUALIFICATIONS">CONTACT</a></li>
+
+   </ul>
+</section>
+
+<section class="homesection" id="home">
+   <div id="idcolorbackground">
+       <div id="idfortext">
+           <h3> We use premium ingredients for an unmatched fresh taste and best quality around sourced locally along with cage-free eggs.</span> </h3>
+
+               <button  ONCLICK="additemone()" class="button">Order Now</button>
+           </a>
+       </div>
+   </div>
+</section>
+
+
+<center>
+<section class="footercontact" id="contact">
+
+  COPY RIGHT 2024 @REEM
+
+</section></CENTER>
+   <!-- <footer>
+
+       COPY RIGHT @ 2024 REEM NEDAL
+   </footer> -->
+
+</body>
+</html>
