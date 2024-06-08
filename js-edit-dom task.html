@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js </title>
+    <link rel="stylesheet" href="jscss.css">
+</head>
+<body>
+
+
+
+<div>
+
+ <script>
+
+
+
+ </script>
+ <script>
+    function additemone(){
+let userName=  prompt("please Enter Your Name ", "default" );
+
+let userGender=  prompt("please Enter Your gender Female/Male ", "Female" );
+let userAge=  prompt("please Enter Your Age ", "20" );
+
+
+ while (userName==null || userName=="default" ){
+  userName=  prompt("please Enter YOur Name ", "default" );
+ }
+
+ while(userGender==null || (userGender!="Female" && userGender!="Male")){
+  userGender=  prompt("please Enter Your gender Female/Male ", "Female" );
+
+ }
+ console.log("userName is:"+userName);
+
+ while (userAge==null ){
+   userAge=  prompt("please Enter Your Age ", "20" ); }
+
+
+ if (userGender=="Female"){
+
+    alert("Welcome Ms."+ userName)
+ } else if (userGender=="Male"){
+
+    alert("Welcome Mr."+userName);
+ }else{
+    alert("Welcome"+userName);
+ }
+
+
+let userOrder=prompt("What You Want to order choose one: Donuts,Coffee,Ice Cream or Bakery ","Donuts");
+console.log("userOrder is:"+userOrder);
+
+while(userOrder==null){
+   userOrder=prompt("What You Want to order choose one: Donuts,Coffee,Ice Cream or Bakery ");
+ }
+
+
+ alert("Your Order is getting prepared"+" "+userName);
+ let  firstArray=[userName,userGender,userOrder,userAge];
+
+
+ let divEeLement=document.getElementById("idforjs");
+ let pEeLement=document.createElement("p");
+ let olEeLement=document.createElement("ol");
+ let liEeLement=document.createElement("li");
+ let liEeLement2=document.createElement("li");
+ let liEeLement3=document.createElement("li");
+
+ pEeLement.style.backgroundColor="#e3effa";
+ liEeLement.style.backgroundColor="#e3effa";
+ liEeLement2.style.backgroundColor="#e3effa";
+ liEeLement3.style.backgroundColor="#e3effa";
+ olEeLement.style.backgroundColor="#e3effa";
+
+
+
+ divEeLement.appendChild(pEeLement);
+ divEeLement.appendChild(olEeLement);
+ olEeLement.appendChild(liEeLement);
+ olEeLement.appendChild(liEeLement2);
+ olEeLement.appendChild(liEeLement3);
+
+ let pText=document.createTextNode(userName);
+ let liOneText=document.createTextNode("Gender:"+userGender);
+ let liTwoText=document.createTextNode("Age:"+userAge);
+ let liThreeText=document.createTextNode("Order:"+userOrder);
+ pEeLement.appendChild(pText);
+liEeLement.appendChild(liOneText);
+liEeLement2.appendChild(liTwoText);
+liEeLement3.appendChild(liThreeText);
+
+
+ for(i=0;i<firstArray.length;i++){
+    console.log(firstArray[i]);
+ }
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+ <!-- <button onclick= "additemone()" >add item </button> -->
+
+</div>
+
+
+
+<section class="top-nav">
+   <div>
+     <img src="logo.png" alt="" width="150%" height="150%">
+   </div>
+   <input id="menu-toggle" type="checkbox"/>
+   <label class='menu-button-container' for="menu-toggle">
+       <div class='menu-button'></div>
+   </label>
+   <ul class="menu">
+       <li><a href="#home">HOME</a></li>
+       <li><a href="#about">ABOUT</a></li>
+       <li><a href="#skills">ORDER NOW</a></li>
+       <li><a href="#QUALIFICATIONS">CONTACT</a></li>
+
+   </ul>
+</section>
+
+<section class="homesection" id="home">
+   <div id="idcolorbackground">
+       <div id="idfortext">
+           <h3> We use premium ingredients for an unmatched fresh taste and best quality around sourced locally along with cage-free eggs.</span> </h3>
+
+               <button  ONCLICK="additemone()" class="button">Order Now</button>
+           </a>
+       </div>
+   </div>
+</section>
+
+
+<div id="idforjs"> </div>
+
+<center>
+<section class="footercontact" id="contact">
+
+  COPY RIGHT 2024 @REEM
+
+</section></CENTER>
+   <!-- <footer>
+
+       COPY RIGHT @ 2024 REEM NEDAL
+   </footer> -->
+
+</body>
+</html>
