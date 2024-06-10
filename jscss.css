@@ -4,26 +4,55 @@ margin: 0;
 padding: 0;
 }
 
+
+.sectionForm{
+    
+ 
+ border-bottom:solid 2px black;
+
+}
+
+.sectionForm form{
+ padding: 2%;
+padding-left:40%;
+    background-color:#4f7aa3;
+}
+
+.sectionForm form h1{
+
+    background-color:#4f7aa3;
+    }
+    
+.sectionForm form input{
+
+margin: 2%;
+padding: 1%;
+}
+
+
 a {
     color:rgb(0, 0, 0);
     font-size:100%;
-
+    text-decoration: none;
+ 
 }
 a:visited,a:hover{
 
     color:rgb(0, 0, 0);
     font-size:100%;
 
-
-
+    text-decoration: none;
+ 
+}
+#backgroungColor{
+    background-color: #121825;
 }
 
-
 a{
+   
 
     text-decoration:none ;
-    background-color:
-    #e3effa;
+     
 }
 
 nav{
@@ -242,6 +271,10 @@ html, body {
     transform: scale(1.2);
     background-color: whitesmoke;
     color: #121825;
+}
+
+a:hover{
+    background-color: whitesmoke;
 }
 
 .aboutsection{
